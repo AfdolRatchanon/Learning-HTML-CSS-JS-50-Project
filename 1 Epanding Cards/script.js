@@ -7,7 +7,8 @@ const removeActiveClass = () => {
 };
 
 panels.forEach((panel) => {
-  panel.addEventListener("click", () => {
+  // click
+  panel.addEventListener("mouseover", () => {
     removeActiveClass();
     panel.classList.add("active");
   });
